@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.converter-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.converter-box h1 {
+  margin-bottom: 5px;
+  color: #22d3ee;
+}
+
+.converter-box p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 48%;
+  padding: 10px;
+  margin: 10px 1%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background: #22d3ee;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#result {
+  margin-top: 20px;
+  background-color: #223d72;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.flags-display {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flags-display img {
+  width: 48px;
+  height: 36px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+}
+.currency-box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.currency, .amount {
+  flex: 1 1 45%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter - Raazia Mehmood</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="converter-box">
+    <h1>💱 Currency Converter</h1>
+    <p>by Raazia Mehmood</p>
+
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <div class="dropdowns">
+      <select id="from-currency" onchange="updateFlags()">
+        <option value="USD" data-flag="us" data-name="US Dollar">USD - United States</option>
+        <option value="PKR" data-flag="pk" data-name="Pakistani Rupee">PKR - Pakistan</option>
+        <option value="INR" data-flag="in" data-name="Indian Rupee">INR - India</option>
+        <option value="EUR" data-flag="eu" data-name="Euro">EUR - Europe</option>
+        <option value="GBP" data-flag="gb" data-name="British Pound">GBP - United Kingdom</option>
+        <option value="AED" data-flag="ae" data-name="Dirham">AED - UAE</option>
+        <option value="SAR" data-flag="sa" data-name="Saudi Riyal">SAR - Saudi Arabia</option>
+        <option value="CAD" data-flag="ca" data-name="Canadian Dollar">CAD - Canada</option>
+        <option value="AUD" data-flag="au" data-name="Australian Dollar">AUD - Australia</option>
+        <option value="CNY" data-flag="cn" data-name="Chinese Yuan">CNY - China</option>
+      </select>
+
+      <span>➡️</span>
+
+      <select id="to-currency" onchange="updateFlags()">
+        <option value="PKR" data-flag="pk" data-name="Pakistani Rupee">PKR - Pakistan</option>
+        <option value="USD" data-flag="us" data-name="US Dollar">USD - United States</option>
+        <option value="INR" data-flag="in" data-name="Indian Rupee">INR - India</option>
+        <option value="EUR" data-flag="eu" data-name="Euro">EUR - Europe</option>
+        <option value="GBP" data-flag="gb" data-name="British Pound">GBP - United Kingdom</option>
+        <option value="AED" data-flag="ae" data-name="Dirham">AED - UAE</option>
+        <option value="SAR" data-flag="sa" data-name="Saudi Riyal">SAR - Saudi Arabia</option>
+        <option value="CAD" data-flag="ca" data-name="Canadian Dollar">CAD - Canada</option>
+        <option value="AUD" data-flag="au" data-name="Australian Dollar">AUD - Australia</option>
+        <option value="CNY" data-flag="cn" data-name="Chinese Yuan">CNY - China</option>
+      </select>
+    </div>
+
+    <div class="flags-display">
+      <img id="from-flag" src="https://flagcdn.com/48x36/us.png" alt="from flag">
+      <img id="to-flag" src="https://flagcdn.com/48x36/pk.png" alt="to flag">
+    </div>
+
+    <button onclick="convertCurrency()">Convert</button>
+    <div id="result-box">
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
